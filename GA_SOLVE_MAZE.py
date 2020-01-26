@@ -268,10 +268,10 @@ for key,val in seeds.items():
 print("*OPERATION CHECK* 上(0)下(2)左(3)右(1)")
 if(generation < generation_length):#指定した世代以内に処理が終了している場合(ゴールが見つかっている)
     ans = score.index(target)
-    print("%d代目の第%d遺伝子がゴールへの経路を発見！" %(generation,ans+1))
+    print("%d代目の第%d個体がゴールへの経路を発見！" %(generation,ans+1))
 else:#最終世代までループした場合(ゴールは見つかっていない)
     ans = score.index(min(score))
-    print("近似解:%d代目の第%d遺伝子" %(generation,ans+1))
+    print("近似解:%d代目の第%d個体" %(generation,ans+1))
 answer = []
 answer = seeds[ans]
 start = [1,1]
